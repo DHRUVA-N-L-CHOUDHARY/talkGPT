@@ -1,6 +1,7 @@
 import 'dart:async';
-import 'package:cloud_project/src/views/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:talkgpt/src/views/home_screen.dart';
+import 'package:talkgpt/src/views/login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -12,9 +13,11 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    
     super.initState();
-    Timer(const Duration(seconds: 5), ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>const Home())));
+    Timer(
+        const Duration(seconds: 5),
+        () => Navigator.pushReplacement(
+            context, MaterialPageRoute(builder: (context) => LoginPage())));
   }
 
   @override
@@ -44,18 +47,18 @@ class _SplashScreenState extends State<SplashScreen> {
                     height: 30,
                     width: 30,
                   ),
-                  const Text("Chat GPT",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18.0,
-                  ),
+                  const Text(
+                    "Chat GPT",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18.0,
+                    ),
                   ),
                 ],
               ),
-              
-                  const CircularProgressIndicator(),
+              const CircularProgressIndicator(),
             ],
           )),
     );

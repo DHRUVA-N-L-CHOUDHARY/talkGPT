@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "248627898906",
+    "project_id": "starter-app-b511e",
+    "storage_bucket": "starter-app-b511e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248627898906:android:8a0730c3191d079a243fa3",
+        "android_client_info": {
+          "package_name": "com.example.talkgpt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248627898906-ogsrfhu1c234ihtd0cj38vb77u7i8gnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN_g0Cks9mjhROhXO4fVkoKka48y416PU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248627898906-ogsrfhu1c234ihtd0cj38vb77u7i8gnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

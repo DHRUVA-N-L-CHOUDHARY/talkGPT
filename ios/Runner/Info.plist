@@ -47,5 +47,9 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<String>Recognition use and display input</String>
+	<key>NSMicrophoneUsageDescription</key>
+	<String>Defect speech input</String>
 </dict>
 </plist>
