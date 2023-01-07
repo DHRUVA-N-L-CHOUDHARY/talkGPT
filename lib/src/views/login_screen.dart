@@ -4,7 +4,7 @@ import 'package:talkgpt/src/controllers/login_controller.dart';
 import 'package:talkgpt/src/utils/widgets/my_button.dart';
 import 'package:talkgpt/src/utils/widgets/my_textfield.dart';
 import 'package:talkgpt/src/utils/widgets/square_tile.dart';
-import 'package:talkgpt/src/views/phone_number.dart';
+import 'package:talkgpt/src/views/phone_login/phone_number.dart';
 import 'package:talkgpt/src/views/registration_screen.dart';
 
 class LoginPage extends StatelessWidget {

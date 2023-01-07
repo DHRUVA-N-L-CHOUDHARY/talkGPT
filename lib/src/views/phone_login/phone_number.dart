@@ -6,7 +6,7 @@ import 'package:talkgpt/src/controllers/phone_number/auth_controller.dart';
 import 'package:form_validator/form_validator.dart';
 import 'package:talkgpt/src/utils/widgets/Custom_button.dart';
 import 'package:talkgpt/src/utils/widgets/my_textfield.dart';
-import 'package:talkgpt/src/views/otp_screen.dart';
+import 'package:talkgpt/src/views/phone_login/otp_screen.dart';
 
 class phoneNumber extends StatefulWidget {
   const phoneNumber({Key? key}) : super(key: key);

@@ -72,7 +72,9 @@ class ChatScreen extends StatelessWidget {
                     color: Colors.white,
                   ),
                   press: () {
+                    
                    controller.speechText.value = ''; 
+
                   },
                 ),
               ],

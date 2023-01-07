@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:talkgpt/src/views/chat_screen.dart';
 import 'package:talkgpt/src/views/home_screen.dart';
-import 'package:talkgpt/src/views/phone_number.dart';
+import 'package:talkgpt/src/views/phone_login/phone_number.dart';
 
 
 

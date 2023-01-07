@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:pinput/pinput.dart';
 import 'package:talkgpt/src/controllers/phone_number/auth_controller.dart';
 import 'package:talkgpt/src/utils/widgets/Custom_button.dart';
-import 'package:talkgpt/src/views/otp_page.dart';
+import 'package:talkgpt/src/views/phone_login/otp_page.dart';
 
 class OTPScreen extends StatefulWidget {
   final String? number;
