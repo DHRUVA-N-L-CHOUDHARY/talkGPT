@@ -1,22 +1,15 @@
 // ignore_for_file: unnecessary_overrides
-
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:talkgpt/src/controllers/home_controller.dart';
 import 'package:talkgpt/src/services/auth.dart';
 import 'package:talkgpt/src/utils/widgets/google_sign_in_load.dart';
-import 'package:talkgpt/src/views/login_screen.dart';
-import 'package:talkgpt/src/views/registration_screen.dart';
-
+import 'package:talkgpt/src/views/chat_screen.dart';
 import '../utils/widgets/custom_loading.dart';
 
 class LoginController extends GetxController {
-   HomeController homeController = Get.put(HomeController());
   final loginformKey = GlobalKey<FormState>();
   AuthService authService = AuthService();
   String? tokenId;
@@ -53,7 +46,7 @@ class LoginController extends GetxController {
             print(result.toString());
             print(result.toString());
           }
-          Get.offAll(() => RegisterPage());
+          Get.offAll(() => const ChatScreen());
         }
       });
     }
@@ -61,8 +54,11 @@ class LoginController extends GetxController {
 
   void googlesignin() async {
     CustomFullScreenDialog.showDialog();
+   GoogleSignIn googleSign = GoogleSignIn();
+
     GoogleSignInAccount? googleSignInAccount =
-        await homeController.googleSign.signIn();
+        await googleSign.signIn();
+
     if (googleSignInAccount == null) {
       CustomFullScreenDialog.cancelDialog();
     } else {
@@ -71,7 +67,7 @@ class LoginController extends GetxController {
       OAuthCredential oAuthCredential = GoogleAuthProvider.credential(
           accessToken: googleSignInAuthentication.accessToken,
           idToken: googleSignInAuthentication.idToken);
-      await homeController.firebaseAuth.signInWithCredential(oAuthCredential);
+      await firebaseAuth.signInWithCredential(oAuthCredential);
       CustomFullScreenDialog.cancelDialog();
     }
   }

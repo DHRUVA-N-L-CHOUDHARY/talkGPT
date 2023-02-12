@@ -10,20 +10,18 @@ class ChatContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      clipBehavior: Clip.antiAlias,
-      // height: SizeConfig(context).getProportionateScreenHeight(100),
-      decoration: BoxDecoration(
-        color: Colors.black,
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(inputtext,style: TextStyle(color: Colors.white, fontSize: 20),),
-          ],
+    return Padding(
+      padding: const EdgeInsets.only(bottom:8.0, right: 8.0, left:8.0),
+      child: Container(
+        // clipBehavior: Clip.antiAlias,
+        // height: SizeConfig(context).getProportionateScreenHeight(100),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0),
+          color: Colors.black,
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(right:20.0, left: 20.0, bottom: 20.0, top: 10.0),
+          child: Text(inputtext.trim(),style: const TextStyle(color: Colors.white, fontSize: 20),),
         ),
       ),
     );
