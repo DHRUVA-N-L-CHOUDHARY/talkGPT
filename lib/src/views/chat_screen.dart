@@ -94,31 +94,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 ),
               ),
             ),
-            // floatingActionButtonLocation:
-            //     FloatingActionButtonLocation.centerDocked,
-            // floatingActionButton: Obx(
-            //   () => AvatarGlow(
-            //     child:  FloatingActionButton(
-            //       backgroundColor: Colors.black,
-            //       child: Icon(
-            //         controller.isListening.value ? Icons.mic : Icons.mic_none,
-            //       ),
-            //       onPressed: () {
-            //         controller.listen();
-            //         setState(() {
-            //           getsearch(controller.speechText.value);
-            //           // list.add(ChatContainer(inputtext: controller.speechText.value));
-            //           controller.speechText.value = '';
-            //         });
-            //       },
-            //     ),
-            //     animate: controller.isListening.value,
-            //     endRadius: 90,
-            //     duration: Duration(milliseconds: 2000),
-            //     repeat: true,
-            //     repeatPauseDuration: Duration(milliseconds: 2000),
-            //   ),
-            // ),
+            
             bottomSheet: Obx(
               () => AvatarGlow(
                 child:  FloatingActionButton(
